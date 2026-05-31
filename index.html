@@ -1,269 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navin Panse | Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
-body{
-    background:#f4f4f4;
-    color:#333;
-    line-height:1.6;
-}
-
-header{
-    background:#0f172a;
-    color:white;
-    padding:20px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-header h1{
-    font-size:28px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-}
-
-.hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(135deg,#2563eb,#1e293b);
-    color:white;
-}
-
-.hero h2{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:1.2rem;
-    max-width:700px;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:white;
-    color:#2563eb;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-section{
-    padding:70px 10%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2rem;
-    color:#0f172a;
-}
-
-.about{
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    gap:40px;
-    align-items:center;
-}
-
-.about img{
-    width:100%;
-    max-width:300px;
-    border-radius:50%;
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    justify-content:center;
-}
-
-.skill{
-    background:#2563eb;
-    color:white;
-    padding:10px 20px;
-    border-radius:20px;
-}
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.project-card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.project-card h3{
-    margin-bottom:10px;
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact a{
-    color:#2563eb;
-    text-decoration:none;
-}
-
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-@media(max-width:768px){
-    .about{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    header{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    nav a{
-        margin:0 10px;
-    }
-
-    .hero h2{
-        font-size:2.2rem;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navin Panse | Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiBmaWxsPSIjMWUyOTNiIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjQ1IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4YmRmOCI+Jmx0Oy8mZ3Q7PC90ZXh0Pjwvc3ZnPg==">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
 <header>
-    <h1>Navin Panse</h1>
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <div class="logo">Navin Panse</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Python Developer</h2>
-    <p>
-        Backend Developer with experience in Python, Django,
-        JavaScript, MySQL, Electron.js, IMAP Email Syncing,
-        and IoT Development.
-    </p>
-    <a href="#contact" class="btn">Hire Me</a>
+    <div class="hero-content">
+        <img src="profile-image.jpg" alt="Navin Panse" onerror="this.src='profile.jpg'">
+        <h1>Navin Panse</h1>
+        <h2 id="typing"></h2>
+        <p>
+            Software Engineer with 3.5+ years of experience building scalable backend systems using
+            Python, Django, Django REST Framework, PostgreSQL, MySQL, AWS, RabbitMQ and Docker.
+            Passionate about designing high-performance applications and solving complex problems.
+        </p>
+        <div>
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="navin-panse.pdf" download class="btn btn-outline" target="_blank">Download Resume</a>
+        </div>
+        <div class="socials">
+            <a href="https://github.com/pansenavin" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/navinpanse/" target="_blank">LinkedIn</a>
+            <a href="https://leetcode.com/u/navinpanse/" target="_blank">LeetCode</a>
+        </div>
+    </div>
 </section>
 
 <section id="about">
     <h2 class="section-title">About Me</h2>
-    <div class="about">
-        <img src="https://via.placeholder.com/300" alt="Profile">
-        <div>
-            <p>
-                I am a Software Developer with 2+ years of experience
-                building scalable backend systems using Python and Django.
-                I have worked on large-scale email synchronization systems,
-                attachment management, REST APIs, and web applications.
-            </p>
-        </div>
+    <div class="card">
+        <p>
+            I am a Software Engineer currently working at Hidden Brains Info Tech.
+            I specialize in Python, Django, REST APIs, database optimization,
+            cloud integrations and scalable backend architecture.
+            I have experience developing enterprise applications,
+            email synchronization systems, logistics platforms,
+            IoT solutions and monitoring tools.
+        </p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="card">
+        <h3>Software Engineer</h3>
+        <h4>Hidden Brains Info Tech Pvt Ltd</h4>
+        <p><strong>Jan 2023 - Present</strong></p>
+        <br>
+        <ul>
+            <li>Developed scalable applications using Python, Django and REST APIs.</li>
+            <li>Integrated AWS services including S3, Lambda, SNS and SES.</li>
+            <li>Worked with PostgreSQL, MySQL, Docker and RabbitMQ.</li>
+            <li>Improved database performance and optimized backend workflows.</li>
+            <li>Built enterprise-grade solutions for logistics and transport management.</li>
+        </ul>
     </div>
 </section>
 
 <section id="skills">
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title">Technical Skills</h2>
     <div class="skills">
-        <span class="skill">Python</span>
-        <span class="skill">Django</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">MySQL</span>
-        <span class="skill">REST API</span>
-        <span class="skill">AWS</span>
-        <span class="skill">Git</span>
-        <span class="skill">Docker</span>
-        <span class="skill">Electron.js</span>
-        <span class="skill">IoT</span>
+        <div class="skill">Python</div>
+        <div class="skill">Django</div>
+        <div class="skill">DRF</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">AWS</div>
+        <div class="skill">RabbitMQ</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Git</div>
+        <div class="skill">REST API</div>
+        <div class="skill">Celery</div>
+        <div class="skill">IoT</div>
     </div>
 </section>
 
 <section id="projects">
-    <h2 class="section-title">Projects</h2>
-
+    <h2 class="section-title">Featured Projects</h2>
     <div class="projects">
-
         <div class="project-card">
-            <h3>Email Synchronization System</h3>
+            <h3>Transport Management System</h3>
             <p>
-                Built a large-scale IMAP/EWS email synchronization
-                platform capable of handling lakhs of emails and attachments.
+                Enterprise logistics platform with automated workflows,
+                AI integrations and database optimization.
             </p>
         </div>
-
         <div class="project-card">
-            <h3>Jewelry Showroom Management</h3>
+            <h3>Web Pulse</h3>
             <p>
-                Developed a Django-based inventory and customer
-                management system with admin and customer portals.
+                Website uptime monitoring platform similar to UptimeRobot.
+                Tracks uptime, downtime, incidents and sends notifications.
             </p>
         </div>
-
         <div class="project-card">
-            <h3>IoT Monitoring System</h3>
+            <h3>Smart Fuel Station</h3>
             <p>
-                Created IoT solutions using ESP8266, sensors,
-                and real-time web dashboards.
+                Smart Fuel Station is an IoT-based system that automates the process of
+                fuel dispensing and monitoring. It allows users to monitor fuel levels,
+                track fuel consumption, and manage fuel expenses.
             </p>
         </div>
+        
+    </div>
+</section>
 
+<section id="stats">
+    <h2 class="section-title">My Stats</h2>
+    <div class="stats-container">
+        <!-- <a href="https://github.com/pansenavin" target="_blank">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=pansenavin&theme=tokyonight&background=1e293b&stroke=38bdf8&ring=38bdf8&fire=38bdf8&currStreakLabel=ffffff" alt="GitHub Streak Stats">
+        </a> -->
+        <!-- <a href="https://github.com/pansenavin" target="_blank">
+            <img src="https://ghchart.rshah.org/38bdf8/pansenavin" alt="GitHub Contribution Chart" style="background: #1e293b; padding: 15px; border-radius: 8px;">
+        </a> -->
+        <!-- LeetCode Stats -->
+        <a href="https://leetcode.com/u/navinpanse/" target="_blank">
+            <img src="https://leetcard.jacoblin.cool/navinpanse?theme=dark&font=Segoe%20UI&ext=heatmap" alt="LeetCode Stats" style="width: 100%; max-width: 650px;">
+        </a>
     </div>
 </section>
 
 <section id="contact" class="contact">
-    <h2 class="section-title">Contact Me</h2>
+    <h2 class="section-title">Let's Connect</h2>
     <p>Email: navinpanse14@gmail.com</p>
     <p>Phone: +91 8349196418</p>
+    <br>
     <p>
-        LinkedIn:
-        <a href="#">linkedin.com/in/yourprofile</a>
-    </p>
-    <p>
-        GitHub:
-        <a href="#">github.com/yourusername</a>
+        <a href="https://github.com/pansenavin" target="_blank" style="color:#38bdf8;">GitHub</a> |
+        <a href="https://www.linkedin.com/in/navinpanse/" target="_blank" style="color:#38bdf8;">LinkedIn</a> |
+        <a href="https://leetcode.com/u/navinpanse/" target="_blank" style="color:#38bdf8;">LeetCode</a>
     </p>
 </section>
 
 <footer>
-    <p>© 2026 Navin Panse. All Rights Reserved.</p>
+    <p>© <span id="current-year"></span> Navin Panse. All Rights Reserved.</p>
 </footer>
 
+<script src="index.js"></script>
 </body>
 </html>

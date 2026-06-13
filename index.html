@@ -3,159 +3,497 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navin Panse | Software Engineer</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiBmaWxsPSIjMWUyOTNiIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjQ1IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4YmRmOCI+Jmx0Oy8mZ3Q7PC90ZXh0Pjwvc3ZnPg==">
+    <title>Navin Panse | Backend Software Engineer</title>
+    <meta name="description" content="Navin Panse - Backend Software Engineer specializing in Python, Django, scalable backend systems, and AI-powered automation workflows.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiBmaWxsPSIjMWUyOTNiIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjQ1IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4YmRmOCI+TjwvdGV4dD48L3N2Zz4=">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="logo">Navin Panse</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#stats">Stats</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="hero-content">
-        <img src="profile-image.jpg" alt="Navin Panse" onerror="this.src='profile.jpg'">
-        <h1>Navin Panse</h1>
-        <h2 id="typing"></h2>
-        <p>
-            Software Engineer with 3.5+ years of experience building scalable backend systems using
-            Python, Django, Django REST Framework, PostgreSQL, MySQL, AWS, RabbitMQ and Docker.
-            Passionate about designing high-performance applications and solving complex problems.
-        </p>
-        <div>
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="navin-panse.pdf" download class="btn btn-outline" target="_blank">Download Resume</a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">Navin Panse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="socials">
-            <a href="https://github.com/pansenavin" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/navinpanse/" target="_blank">LinkedIn</a>
-            <a href="https://leetcode.com/u/navinpanse/" target="_blank">LeetCode</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-7 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="hero-title">Navin Panse</h1>
+                <div class="typing-container">
+                    <h2 class="hero-subtitle" id="typing"></h2>
+                </div>
+                <p class="lead mb-4">
+                    I build scalable backend systems, AI-powered workflow automation, and enterprise-grade applications using Python, Django, PostgreSQL, AWS, RabbitMQ, and Docker.
+                </p>
+                <div class="d-flex gap-3 justify-content-center justify-content-lg-start mb-4">
+                    <a href="#projects" class="btn btn-primary-custom">View Projects</a>
+                    <a href="navin-panse.pdf" download class="btn btn-outline-custom" target="_blank">Download Resume <i class="fa-solid fa-download ms-2"></i></a>
+                </div>
+                <div class="social-links text-start mb-0">
+                    <a href="https://github.com/pansenavin" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/navinpanse/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/navinpanse/" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-img-container">
+                    <div class="profile-glow"></div>
+                    <img src="profile-image.jpg" alt="Navin Panse" class="profile-img" onerror="this.src='https://placehold.co/400?text=NP&font=inter'">
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
+<!-- Achievement Banner -->
+<section class="py-5" style="background: rgba(255,255,255,0.02); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-card">
+                    <div class="stat-value"><span class="counter" data-target="3">0</span>+</div>
+                    <div class="stat-label">Years Exp</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-card">
+                    <div class="stat-value"><span class="counter" data-target="10">0</span>+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-card">
+                    <div class="stat-value"><span class="counter" data-target="200">0</span>k+</div>
+                    <div class="stat-label">Emails</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+                <div class="stat-card">
+                    <div class="stat-value"><span class="counter" data-target="1">0</span>M+</div>
+                    <div class="stat-label">Attachments</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+                <div class="stat-card">
+                    <div class="stat-value"><span class="counter" data-target="500">0</span>+</div>
+                    <div class="stat-label">DSA Solved</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="600">
+                <div class="stat-card">
+                    <div class="stat-value"><span class="counter" data-target="75">0</span>%</div>
+                    <div class="stat-label">Query Boost</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
 <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="card">
-        <p>
-            I am a Software Engineer currently working at Hidden Brains Info Tech.
-            I specialize in Python, Django, REST APIs, database optimization,
-            cloud integrations and scalable backend architecture.
-            I have experience developing enterprise applications,
-            email synchronization systems, logistics platforms,
-            IoT solutions and monitoring tools.
-        </p>
-    </div>
-</section>
-
-<section id="experience">
-    <h2 class="section-title">Experience</h2>
-    <div class="card">
-        <h3>Software Engineer</h3>
-        <h4>Hidden Brains Info Tech Pvt Ltd</h4>
-        <p><strong>Jan 2023 - Present</strong></p>
-        <br>
-        <ul>
-            <li>Developed scalable applications using Python, Django and REST APIs.</li>
-            <li>Integrated AWS services including S3, Lambda, SNS and SES.</li>
-            <li>Worked with PostgreSQL, MySQL, Docker and RabbitMQ.</li>
-            <li>Improved database performance and optimized backend workflows.</li>
-            <li>Built enterprise-grade solutions for logistics and transport management.</li>
-        </ul>
-    </div>
-</section>
-
-<section id="skills">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">Django</div>
-        <div class="skill">DRF</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">PostgreSQL</div>
-        <div class="skill">AWS</div>
-        <div class="skill">RabbitMQ</div>
-        <div class="skill">Docker</div>
-        <div class="skill">Git</div>
-        <div class="skill">REST API</div>
-        <div class="skill">Celery</div>
-        <div class="skill">IoT</div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="projects">
-        <div class="project-card">
-            <h3>Transport Management System</h3>
-            <p>
-                Enterprise logistics platform with automated workflows,
-                AI integrations and database optimization.
-            </p>
+    <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">About Me</h2>
+                <div class="glass-card text-start mt-4">
+                    <p>
+                        Backend Software Engineer with 3+ years of experience building enterprise-grade web applications, REST APIs, asynchronous processing systems, and AI-powered automation solutions.
+                    </p>
+                    <p>
+                        Experienced in Python, Django, PostgreSQL, AWS, Docker, RabbitMQ, Celery, OpenAI API integrations, and large-scale email synchronization systems.
+                    </p>
+                    <p class="mb-0">
+                        Strong interest in backend architecture, distributed systems, database optimization, and scalable software design.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-            <h3>Web Pulse</h3>
-            <p>
-                Website uptime monitoring platform similar to UptimeRobot.
-                Tracks uptime, downtime, incidents and sends notifications.
-            </p>
-        </div>
-        <div class="project-card">
-            <h3>Smart Fuel Station</h3>
-            <p>
-                Smart Fuel Station is an IoT-based system that automates the process of
-                fuel dispensing and monitoring. It allows users to monitor fuel levels,
-                track fuel consumption, and manage fuel expenses.
-            </p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" style="background: rgba(255,255,255,0.01);">
+    <div class="container" data-aos="fade-up">
+        <div class="text-center">
+            <h2 class="section-title">Technical Skills</h2>
         </div>
         
+        <div class="row mt-5 g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="glass-card h-100 p-4">
+                    <div class="skills-category">
+                        <h4><i class="fa-solid fa-server text-gradient"></i> Backend</h4>
+                        <div class="mt-3">
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge">Django</span>
+                            <span class="skill-badge">DRF</span>
+                            <span class="skill-badge"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="skill-badge">CodeIgniter</span>
+                            <span class="skill-badge">Microservice Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="glass-card h-100 p-4">
+                    <div class="skills-category">
+                        <h4><i class="fa-solid fa-database text-gradient"></i> Databases</h4>
+                        <div class="mt-3">
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="glass-card h-100 p-4">
+                    <div class="skills-category">
+                        <h4><i class="fa-brands fa-aws text-gradient"></i> Cloud</h4>
+                        <div class="mt-3">
+                            <span class="skill-badge">AWS EC2</span>
+                            <span class="skill-badge">AWS S3</span>
+                            <span class="skill-badge">AWS Lambda</span>
+                            <span class="skill-badge">AWS SNS</span>
+                            <span class="skill-badge">AWS SES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="glass-card h-100 p-4">
+                    <div class="skills-category">
+                        <h4><i class="fa-solid fa-bolt text-gradient"></i> Messaging & Async</h4>
+                        <div class="mt-3">
+                            <span class="skill-badge">RabbitMQ</span>
+                            <span class="skill-badge">Celery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="glass-card h-100 p-4">
+                    <div class="skills-category">
+                        <h4><i class="fa-brands fa-docker text-gradient"></i> DevOps</h4>
+                        <div class="mt-3">
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-badge">Supervisor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="glass-card h-100 p-4">
+                    <div class="skills-category">
+                        <h4><i class="fa-solid fa-robot text-gradient"></i> AI & Automation</h4>
+                        <div class="mt-3">
+                            <span class="skill-badge">OpenAI API</span>
+                            <span class="skill-badge">Prompt Engineering</span>
+                            <span class="skill-badge">Workflow Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="stats">
-    <h2 class="section-title">My Stats</h2>
-    <div class="stats-container">
-        <!-- <a href="https://github.com/pansenavin" target="_blank">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=pansenavin&theme=tokyonight&background=1e293b&stroke=38bdf8&ring=38bdf8&fire=38bdf8&currStreakLabel=ffffff" alt="GitHub Streak Stats">
-        </a> -->
-        <!-- <a href="https://github.com/pansenavin" target="_blank">
-            <img src="https://ghchart.rshah.org/38bdf8/pansenavin" alt="GitHub Contribution Chart" style="background: #1e293b; padding: 15px; border-radius: 8px;">
-        </a> -->
-        <!-- LeetCode Stats -->
-        <a href="https://leetcode.com/u/navinpanse/" target="_blank">
-            <img src="https://leetcard.jacoblin.cool/navinpanse?theme=dark&font=Segoe%20UI&ext=heatmap" alt="LeetCode Stats" style="width: 100%; max-width: 650px;">
-        </a>
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Experience</h2>
+        </div>
+        
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-content glass-card p-4">
+                    <h4>Software Engineer</h4>
+                    <p class="mb-1"><a href="https://www.hiddenbrains.com/" target="_blank" class="text-white text-decoration-none" style="transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='white'">Hidden Brains Info Tech Pvt. Ltd. <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 0.8rem;"></i></a></p>
+                    <div class="date"><i class="fa-regular fa-calendar me-2"></i> Jan 2023 - Present</div>
+                    <ul class="mt-3 mb-0">
+                        <li>Developed and maintained scalable web applications and RESTful APIs using Python, Django, DRF, and PostgreSQL.</li>
+                        <li>Implemented asynchronous task processing using Celery, RabbitMQ, and Docker.</li>
+                        <li>Integrated AWS services including EC2, S3, Lambda, SNS, and SES.</li>
+                        <li>Optimized PostgreSQL queries and indexing strategies, reducing report generation time from 20 seconds to under 3 seconds.</li>
+                        <li>Contributed to AI-powered workflow automation solutions using OpenAI APIs.</li>
+                        <li>Designed and developed highly scalable microservice architectures to improve system modularity and deployment workflows.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="contact" class="contact">
-    <h2 class="section-title">Let's Connect</h2>
-    <p>Email: navinpanse14@gmail.com</p>
-    <p>Phone: +91 8349196418</p>
-    <br>
-    <p>
-        <a href="https://github.com/pansenavin" target="_blank" style="color:#38bdf8;">GitHub</a> |
-        <a href="https://www.linkedin.com/in/navinpanse/" target="_blank" style="color:#38bdf8;">LinkedIn</a> |
-        <a href="https://leetcode.com/u/navinpanse/" target="_blank" style="color:#38bdf8;">LeetCode</a>
-    </p>
+<!-- Projects Section -->
+<section id="projects" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of enterprise-grade backend systems I've built</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Transport Management System</h3>
+                        <div class="project-tech">
+                            <span>Django</span><span>PostgreSQL</span><span>OpenAI API</span><span>Celery</span><span>RabbitMQ</span><span>Docker</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Problem:</strong> Manual transport order processing from customer emails.</p>
+                            <p><strong>Solution:</strong> Built an AI-powered order management platform using OpenAI APIs and email synchronization workflows.</p>
+                            <p><strong>Impact:</strong> Processed 200k+ emails, managed 1M+ attachments, reduced manual effort, and improved query performance by 70%.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Pulse</h3>
+                        <div class="project-tech">
+                            <span>Django</span><span>DRF</span><span>React</span><span>PostgreSQL</span><span>Celery</span><span>Docker</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Problem:</strong> Need real-time website monitoring.</p>
+                            <p><strong>Solution:</strong> Built a website uptime monitoring platform with automated health checks and notifications.</p>
+                            <p><strong>Impact:</strong> Real-time alerts, performance tracking, and immediate downtime detection.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/pansenavin/web-pulse-backend
+" class="btn btn-outline-custom btn-sm" target="_blank"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                            <!-- <a href="#" class="btn btn-primary-custom btn-sm" style="padding: 6px 16px;"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Live Demo</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fa-solid fa-gas-pump"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Fuel Station</h3>
+                        <div class="project-tech">
+                            <span>Python</span><span>Django</span><span>MySQL</span><span>RabbitMQ</span><span>Docker</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Problem:</strong> Manual fuel station operations.</p>
+                            <p><strong>Solution:</strong> Built an automation platform integrating Forecourt Controller APIs for fuel dispensing and monitoring.</p>
+                            <p><strong>Impact:</strong> Real-time inventory tracking, automated fuel dispensing, and improved operational efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fa-solid fa-house-signal"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Home Automation</h3>
+                        <div class="project-tech">
+                            <span>Arduino</span><span>ESP8266</span><span>HTML/CSS</span><span>JS/jQuery</span><span>Bootstrap</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Problem:</strong> Need centralized control of home devices.</p>
+                            <p><strong>Solution:</strong> Built an IoT-based home automation system utilizing ESP8266 to control appliances via a custom web interface.</p>
+                            <p><strong>Impact:</strong> Achieved seamless remote automation and monitoring of home appliances.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bella Roules</h3>
+                        <div class="project-tech">
+                            <span>Node.js</span><span>React</span><span>PostgreSQL</span><span>AWS</span><span>OpenAI</span><span>Gemini</span><span>RabbitMQ</span><span>Microservices</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Problem:</strong> Choosing the right Outfit of the Day (OOTD) for events.</p>
+                            <p><strong>Solution:</strong> Built an AI-powered wardrobe system utilizing OpenAI and Gemini to extract clothes from user photos, generate event-specific OOTDs, and provide a virtual try-on experience.</p>
+                            <p><strong>Impact:</strong> Created an engaging, personalized fashion experience using a highly scalable microservices architecture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fa-solid fa-school-circle-check"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>School Compliance Management</h3>
+                        <div class="project-tech">
+                            <span>Python</span><span>Django</span><span>DRF</span><span>PostgreSQL</span><span>Celery</span><span>RabbitMQ</span>
+                        </div>
+                        <div class="project-details">
+                            <p><strong>Problem:</strong> Schools struggling to maintain regulatory compliance and avoid government penalties.</p>
+                            <p><strong>Solution:</strong> Built a robust compliance management system with dynamic checklists and prerequisite tracking.</p>
+                            <p><strong>Impact:</strong> Ensured proper adherence to government regulations and significantly reduced manual compliance tracking effort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- Achievements Section -->
+<section id="achievements">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h2 class="section-title mb-4">Achievements</h2>
+                <div class="glass-card mb-4 p-4 d-flex align-items-center gap-3">
+                    <div class="fs-1 text-gradient"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                        <h5 class="mb-1 text-white">500+ DSA Problems Solved</h5>
+                        <p class="mb-0 small">Across LeetCode, Coding Ninjas, and GeeksforGeeks.</p>
+                    </div>
+                </div>
+                <div class="glass-card mb-4 p-4 d-flex align-items-center gap-3">
+                    <div class="fs-1 text-gradient"><i class="fa-solid fa-database"></i></div>
+                    <div>
+                        <h5 class="mb-1 text-white">75% Query Optimization</h5>
+                        <p class="mb-0 small">Significantly improved PostgreSQL query performance.</p>
+                    </div>
+                </div>
+                <div class="glass-card mb-4 p-4 d-flex align-items-center gap-3">
+                    <div class="fs-1 text-gradient"><i class="fa-solid fa-envelope-circle-check"></i></div>
+                    <div>
+                        <h5 class="mb-1 text-white">Massive Data Processing</h5>
+                        <p class="mb-0 small">Built systems processing 200k+ emails and 1M+ attachments.</p>
+                    </div>
+                </div>
+                <div class="glass-card p-4 d-flex align-items-center gap-3">
+                    <div class="fs-1 text-gradient"><i class="fa-solid fa-brain"></i></div>
+                    <div>
+                        <h5 class="mb-1 text-white">AI Automation Delivery</h5>
+                        <p class="mb-0 small">Delivered enterprise-grade AI-powered workflow automation solutions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left">
+                <h2 class="section-title mb-4 text-center text-lg-start">LeetCode Stats</h2>
+                <div class="glass-card p-4 text-center d-flex justify-content-center align-items-center h-75 mt-3">
+                    <a href="https://leetcode.com/u/navinpanse/" target="_blank" class="w-100">
+                        <img src="https://leetcard.jacoblin.cool/navinpanse?theme=dark&font=Inter&ext=heatmap" alt="LeetCode Stats" class="img-fluid rounded border border-secondary" style="max-width: 100%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" style="background: rgba(255,255,255,0.01);">
+    <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">Let's Build Something Great Together</h2>
+                <p class="section-subtitle mb-5">Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                
+                <div class="glass-card text-center p-5">
+                    <div class="d-flex flex-column gap-4 align-items-center">
+                        <a href="mailto:navinpanse14@gmail.com" class="text-decoration-none" style="color: var(--text-primary); transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-primary)'">
+                            <i class="fa-solid fa-envelope fs-2 mb-2 text-gradient d-block"></i>
+                            <span class="fs-4 fw-medium">navinpanse14@gmail.com</span>
+                        </a>
+                        <a href="tel:+918349196418" class="text-decoration-none" style="color: var(--text-primary); transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-primary)'">
+                            <i class="fa-solid fa-phone fs-2 mb-2 text-gradient d-block"></i>
+                            <span class="fs-4 fw-medium">+91 8349196418</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
 <footer>
-    <p>© <span id="current-year"></span> Navin Panse. All Rights Reserved.</p>
+    <div class="container">
+        <div class="social-links">
+            <a href="mailto:navinpanse14@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/pansenavin" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/navinpanse/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://leetcode.com/u/navinpanse/" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        </div>
+        <p class="mb-0 text-secondary">&copy; <span id="current-year"></span> Navin Panse. All Rights Reserved.</p>
+    </div>
 </footer>
 
+<!-- Scripts -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Custom JS -->
 <script src="index.js"></script>
+
 </body>
 </html>
